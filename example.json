@@ -1,0 +1,36 @@
+{
+    "Server": {
+        "ip": "<ip of the server>",
+        "port": 51820
+    },
+    "Networks": {
+        "Net1": {
+            "allowedIps": "10.1.1.0/24",
+            "serverIp": "10.1.1.1/32",
+            "peers": [
+                {
+                    "name": "Notebook",
+                    "ip": "10.1.1.2/32"
+                },
+                {
+                    "name": "Phone",
+                    "ip": "10.1.1.3/32"
+                }
+
+            ]
+        },
+        "Net2": {
+            "allowedIps": "10.1.2.0/24",
+            "serverIp": "10.1.2.1/32",
+            "peers": [
+                {
+                "name": "PC",
+                "ip": "10.1.2.2/32"
+            },
+            {
+                "name": "Rpi",
+                "ip": "10.1.2.3/32"
+            }]
+        }
+    }
+}
