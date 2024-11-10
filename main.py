@@ -78,7 +78,7 @@ def makeFiles(jsonFileName):
             lines = []
             lines.append("[Interface]")
             lines.append("PrivateKey = " + peer["privateKey"])
-            lines.append("Adress = " + peer["ip"])
+            lines.append("Address = " + peer["ip"])
             # lines.append("DNS = 8.8.8.8") # ?
             lines.append("")
             lines.append("[Peer]")
@@ -93,7 +93,7 @@ def makeFiles(jsonFileName):
     lines = []
     lines.append("[Interface]")
     lines.append("PrivateKey = " + d["Server"]["privateKey"])
-    lines.append("Adress = " + d["Server"]["ip"])
+    lines.append("Address = " + d["Server"]["ip"])
     lines.append("ListenPort = " + str(d["Server"]["port"]))
     
     for name, data in d["Networks"].items():
